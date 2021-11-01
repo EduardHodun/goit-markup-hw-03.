@@ -1,0 +1,372 @@
+:root {
+  --primary-title-color: #ffffff;
+  --title-text-color: #212121;
+
+  --primary-text-color: #757575;
+
+  --accent-color: #2196f3;
+  --logo-first-color: #2196f3;
+  --logo-second-color: #000000;
+
+  --btn-color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--primary-text-color);
+
+  font-family: "Roboto", sans-serif;
+}
+
+/* "Raleway",  */
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  background-color: var(--accent-color);
+
+  color: var(--primary-title-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
+
+.title {
+}
+
+/* цвет основного текста ----212121(чёрный)---
+                            серый----757575----для абзацов */
+/* вторичный цвет текста ----FFFFFF(белый), 2196F3(синий - при навидени) */
+
+/* цвета страницы: 
+белый-----FFFFFF
+серый-----F5F4FA
+тёмно серый---2F303A
+синий-----2196F3
+
+
+КНОПКА
+
+синий ----2196F3 
+
+синий(ховер)---188CE8
+
+
+
+
+ЛОГО
+синий---2196F3
+чёрный--000000
+
+*/
+
+/* HEADER */
+
+.logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+}
+
+.logo-web {
+  color: var(--logo-first-color);
+}
+
+.logo-s {
+  color: var(--logo-second-color);
+}
+
+/* header-menu */
+
+.nav-menu {
+}
+
+.nav-menu-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
+}
+
+.nav-menu .link.current {
+  color: var(--accent-color);
+}
+
+.nav-menu-link:hover,
+.nav-menu-link:focus {
+  color: var(--accent-color);
+}
+
+.header-mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+/* MAIN */
+
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--primary-title-color);
+}
+
+/* Features */
+.features-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.features-subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+
+.features-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+/* Jobs */
+
+.jobs-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+/* team */
+.team-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.team-subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.team-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}
+
+/* FOOTER */
+
+.footer {
+  background: #2f303a;
+}
+
+/* logo-web взята з ХЕДЕРА */
+.footer-logo-web {
+  color: var(--logo-first-color);
+}
+
+.footer-logo-s {
+  color: var(--primary-title-color);
+}
+
+.footer-address-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--primary-title-color);
+}
+
+.footer-mail {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-tel {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* PORTFOLIO */
+
+.portfolio-btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background: #f5f4fa;
+}
+
+.portfolio-btn-filter:active {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  background-color: var(--accent-color);
+}
+
+.portfolio-btn-filter:hover,
+.portfolio-btn-filter:focus {
+  color: #ffffff;
+
+  background-color: var(--accent-color);
+}
+
+/* works list */
+
+.potfolio-works-subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 0.06em;
+
+  color: #212121;
+}
+.potfolio-works-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 187% */
+
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
