@@ -16,6 +16,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 body {
@@ -45,8 +46,9 @@ img {
   line-height: 1.87;
   /* identical to box height, or 187% */
 
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
+
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -89,7 +91,41 @@ img {
 
 */
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* outline: 2px solid teal; */
+}
+
 /* HEADER */
+.header-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header-logo {
+  margin-right: 93px;
+}
+
+.logo-menu-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .logo {
   font-family: Raleway;
@@ -111,7 +147,15 @@ img {
 
 /* header-menu */
 
+.header-nav {
+  display: flex;
+}
+
 .nav-menu {
+  display: flex;
+}
+.header-nav .nav-menu-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-menu-link {
@@ -131,6 +175,10 @@ img {
 .nav-menu-link:hover,
 .nav-menu-link:focus {
   color: var(--accent-color);
+}
+
+.header-conteiner .list {
+  display: flex;
 }
 
 .header-mail {
@@ -165,9 +213,29 @@ img {
 
 /* MAIN */
 
-.hero {
-  background-color: #2f303a;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
+.hero .section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero {
+  /* width: 1600px; */
+  height: 600px;
+
+  background: #2f303a;
+}
+
+.hero .hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-title {
   font-style: normal;
   font-weight: 900;
@@ -179,7 +247,22 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
+  width: 696px;
+  height: 120px;
+
+  margin-bottom: 30px;
+
   color: var(--primary-title-color);
+}
+
+.hero-btn {
+  /* margin: 350px 700px 200px 700px; */
+
+  box-sizing: border-box;
+  min-width: 200px;
+  min-height: 50px;
+
+  padding: 10px 32px;
 }
 
 /* Features */
@@ -202,6 +285,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
+  margin-bottom: 10px;
   color: var(--title-text-color);
 }
 
@@ -217,6 +301,19 @@ img {
   color: var(--primary-text-color);
 }
 
+.features .list {
+  display: flex;
+}
+
+.features-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-list-item {
+  width: 270px;
+  height: 101px;
+}
+
 /* Jobs */
 
 .jobs-title {
@@ -227,7 +324,18 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
+}
+
+.jobs .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* team */
@@ -239,6 +347,8 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 }
 
@@ -247,10 +357,15 @@ img {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.19;
+
+  text-align: center;
   /* identical to box height */
 
   /* text-align: center; */
   letter-spacing: 0.03em;
+
+  padding-top: 30px;
+  margin-bottom: 10px;
 
   color: var(--title-text-color);
 }
@@ -260,6 +375,7 @@ img {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
   /* identical to box height */
 
   /* text-align: center; */
@@ -268,10 +384,34 @@ img {
   color: var(--primary-text-color);
 }
 
+/* .team .list li {
+  width: 270px;
+  height: 368px;
+} */
+
+.team .list {
+  display: flex;
+  justify-content: space-between;
+}
+.team-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 270px;
+  height: 368px;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* FOOTER */
 
 .footer {
   background: #2f303a;
+
+  min-height: 252px;
 }
 
 /* logo-web взята з ХЕДЕРА */
@@ -293,6 +433,8 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--primary-title-color);
+
+  margin-bottom: 10px;
 }
 
 .footer-mail {
@@ -317,6 +459,20 @@ img {
   letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.footer-list-item {
+  margin-bottom: 10px;
 }
 
 /* PORTFOLIO */
@@ -357,7 +513,27 @@ img {
   background-color: var(--accent-color);
 }
 
+.filter {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 35px;
+}
+
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 /* works list */
+
+.works {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .potfolio-works-subtitle {
   font-style: normal;
