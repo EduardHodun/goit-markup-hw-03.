@@ -5,8 +5,11 @@
   --primary-text-color: #757575;
 
   --accent-color: #2196f3;
-  --logo-first-color: #2196f3;
+
   --logo-second-color: #000000;
+
+  --accent-bg-color: #2f303a;
+  --team-bg-color: #f5f4fa;
 
   --btn-color: #ffffff;
 }
@@ -52,6 +55,10 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
 
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+
   background-color: var(--accent-color);
 
   color: var(--primary-title-color);
@@ -59,7 +66,7 @@ img {
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #188ce8;
+  background-color: var(--accent-color);
 }
 
 .title {
@@ -71,10 +78,10 @@ img {
 
 /* цвета страницы: 
 белый-----FFFFFF
-серый-----F5F4FA
-тёмно серый---2F303A
 синий-----2196F3
 
+bg-серый-----F5F4FA
+bg-тёмно серый---2F303A
 
 КНОПКА
 
@@ -88,6 +95,7 @@ img {
 ЛОГО
 синий---2196F3
 чёрный--000000
+--logo-first-color: #2196f3;
 
 */
 
@@ -111,6 +119,7 @@ img {
 }
 
 .header-logo {
+  display: flex;
   margin-right: 93px;
 }
 
@@ -138,7 +147,7 @@ img {
 }
 
 .logo-web {
-  color: var(--logo-first-color);
+  color: var(--accent-color);
 }
 
 .logo-s {
@@ -339,6 +348,10 @@ img {
 }
 
 /* team */
+.team {
+  background-color: var(--team-bg-color);
+}
+
 .team-title {
   font-style: normal;
   font-weight: bold;
@@ -409,18 +422,25 @@ img {
 /* FOOTER */
 
 .footer {
-  background: #2f303a;
+  background: var(--accent-bg-color);
 
   min-height: 252px;
 }
 
 /* logo-web взята з ХЕДЕРА */
 .footer-logo-web {
-  color: var(--logo-first-color);
+  color: var(--accent-color);
 }
 
 .footer-logo-s {
   color: var(--primary-title-color);
+}
+
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-tel:hover,
+.footer-tel:focus {
+  color: var(--accent-color);
 }
 
 .footer-address-text {
@@ -467,6 +487,7 @@ img {
 }
 
 .footer-link {
+  display: flex;
   margin-top: 60px;
   margin-bottom: 20px;
 }
@@ -486,6 +507,10 @@ img {
 
   text-align: center;
   letter-spacing: 0.03em;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 
   color: var(--title-text-color);
   background: #f5f4fa;
@@ -544,7 +569,7 @@ img {
 
   letter-spacing: 0.06em;
 
-  color: #212121;
+  color: var(--title-text-color);
 }
 .potfolio-works-text {
   font-style: normal;
@@ -555,5 +580,5 @@ img {
 
   letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--primary-text-color);
 }
