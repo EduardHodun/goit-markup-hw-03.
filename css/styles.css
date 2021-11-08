@@ -69,9 +69,6 @@ img {
   background-color: var(--accent-color);
 }
 
-.title {
-}
-
 /* цвет основного текста ----212121(чёрный)---
                             серый----757575----для абзацов */
 /* вторичный цвет текста ----FFFFFF(белый), 2196F3(синий - при навидени) */
@@ -498,6 +495,12 @@ bg-тёмно серый---2F303A
 
 /* PORTFOLIO */
 
+/* Porfolio HEADER */
+
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
+
 .portfolio-btn {
   font-style: normal;
   font-weight: 500;
@@ -542,7 +545,7 @@ bg-тёмно серый---2F303A
   display: flex;
   justify-content: center;
 
-  margin-bottom: 35px;
+  margin-bottom: 34px;
 }
 
 .filter-list-item:not(:last-child) {
@@ -555,9 +558,31 @@ bg-тёмно серый---2F303A
   display: flex;
   flex-wrap: wrap;
 }
+/* .works .works-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
 
 .works-list-item:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.works-list-item:nth-child(3n + 3) {
+  margin-right: 0px;
+}
+
+.works-list-item img {
+  margin-bottom: 20px;
+}
+
+.works-list-item h2 {
+  margin-bottom: 4px;
+}
+.works-list-item p {
+  margin-bottom: 20px;
 }
 
 .potfolio-works-subtitle {
