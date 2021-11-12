@@ -10,6 +10,7 @@
 
   --accent-bg-color: #2f303a;
   --team-bg-color: #f5f4fa;
+  --team-cards-bg-color: #ffffff;
 
   --btn-color: #ffffff;
 }
@@ -99,7 +100,7 @@ bg-тёмно серый---2F303A
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
 
@@ -171,6 +172,9 @@ bg-тёмно серый---2F303A
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 }
 
@@ -194,6 +198,9 @@ bg-тёмно серый---2F303A
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
 }
 
@@ -208,6 +215,9 @@ bg-тёмно серый---2F303A
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--primary-text-color);
 }
@@ -224,13 +234,13 @@ bg-тёмно серый---2F303A
   padding-bottom: 94px;
 }
 
-.hero .section {
+.hero.section {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 .hero {
   /* width: 1600px; */
-  height: 600px;
+  max-height: 600px;
 
   background: #2f303a;
 }
@@ -317,11 +327,14 @@ bg-тёмно серый---2F303A
 
 .features-list-item {
   width: 270px;
-  height: 101px;
+  /* height: 101px; */
 }
 
 /* Jobs */
-
+.section-jobs {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
 .jobs-title {
   font-style: normal;
   font-weight: bold;
@@ -392,6 +405,8 @@ bg-тёмно серый---2F303A
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+
+  margin-bottom: 30px;
 }
 
 /* .team .list li {
@@ -408,8 +423,11 @@ bg-тёмно серый---2F303A
   justify-content: center;
   flex-direction: column;
 
+  background-color: var(--team-cards-bg-color);
+  border-radius: 0px 0px 4px 4px;
+
   width: 270px;
-  height: 368px;
+  /* max-height: 368px; */
 }
 
 .team-list-item:not(:last-child) {
@@ -421,7 +439,11 @@ bg-тёмно серый---2F303A
 .footer {
   background: var(--accent-bg-color);
 
-  min-height: 252px;
+  /* min-height: 252px; */
+}
+.footer.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* logo-web взята з ХЕДЕРА */
@@ -485,11 +507,11 @@ bg-тёмно серый---2F303A
 
 .footer-link {
   display: flex;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 20px;
 }
 
-.footer-list-item {
+.footer-list-item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -517,6 +539,8 @@ bg-тёмно серый---2F303A
 
   color: var(--title-text-color);
   background: #f5f4fa;
+
+  padding: 6px 22px 6px 22px;
 }
 
 .portfolio-btn-filter:active {
@@ -541,13 +565,21 @@ bg-тёмно серый---2F303A
   background-color: var(--accent-color);
 }
 
+.current-btn-filter {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
+
 .filter {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
+.filter-list-text {
+  padding: 6px 22px 6px 22px;
+}
 .filter-list-item:not(:last-child) {
   margin-right: 8px;
 }
@@ -564,9 +596,18 @@ bg-тёмно серый---2F303A
   justify-content: center;
   align-items: center;
 } */
+.works-list-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
 
 .works-list-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+}
+
+.works-list-item:last-child {
   margin-bottom: 30px;
 }
 
@@ -579,9 +620,13 @@ bg-тёмно серый---2F303A
 }
 
 .works-list-item h2 {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 4px;
 }
 .works-list-item p {
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
 }
 
