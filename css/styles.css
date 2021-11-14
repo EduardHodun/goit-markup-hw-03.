@@ -112,13 +112,14 @@ bg-тёмно серый---2F303A
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 }
 
 .header-logo {
   display: flex;
   margin-right: 93px;
+  padding: 24px 0;
 }
 
 .logo-menu-wrapper {
