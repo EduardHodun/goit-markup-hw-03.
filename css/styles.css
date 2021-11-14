@@ -167,6 +167,7 @@ bg-тёмно серый---2F303A
 }
 
 .nav-menu-link {
+  display: block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -193,6 +194,7 @@ bg-тёмно серый---2F303A
 }
 
 .header-mail {
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -211,6 +213,7 @@ bg-тёмно серый---2F303A
 }
 
 .header-tel {
+  display: flex;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -388,7 +391,6 @@ bg-тёмно серый---2F303A
   /* text-align: center; */
   letter-spacing: 0.03em;
 
-  padding-top: 30px;
   margin-bottom: 10px;
 
   color: var(--title-text-color);
@@ -407,9 +409,13 @@ bg-тёмно серый---2F303A
 
   color: var(--primary-text-color);
 
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
+.team-text-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* .team .list li {
   width: 270px;
   height: 368px;
@@ -478,6 +484,7 @@ bg-тёмно серый---2F303A
 }
 
 .footer-mail {
+  display: flex;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -490,6 +497,7 @@ bg-тёмно серый---2F303A
 }
 
 .footer-tel {
+  display: flex;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -585,7 +593,7 @@ bg-тёмно серый---2F303A
   margin-right: 8px;
 }
 
-/* works list */
+/* portfolio works list */
 
 .works {
   display: flex;
@@ -616,11 +624,11 @@ bg-тёмно серый---2F303A
   margin-right: 0px;
 }
 
-.works-list-item img {
+/* .works-list-item img {
   margin-bottom: 20px;
-}
+} */
 
-.works-list-item h2 {
+/* .works-list-item h2 {
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 4px;
@@ -629,6 +637,13 @@ bg-тёмно серый---2F303A
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
+} */
+
+.porfolio-wotks-text-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 24px;
 }
 
 .potfolio-works-subtitle {
@@ -639,6 +654,8 @@ bg-тёмно серый---2F303A
   /* identical to box height, or 200% */
 
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 
   color: var(--title-text-color);
 }
